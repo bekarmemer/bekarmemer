@@ -5,39 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Bekar Memer – Clean & Relatable Meme Entertainment</title>
-<meta name="description" content="Bekar Memer shares clean, relatable, and platform-safe meme content. Entertainment only. No hate. No scams.">
 
+<meta name="description" content="Bekar Memer shares clean, relatable, and platform-safe meme content. Entertainment only. No hate. No scams.">
+<meta name="author" content="Bekar Memer">
+
+<!-- Open Graph -->
 <meta property="og:title" content="Bekar Memer">
-<meta property="og:description" content="Clean, relatable, platform-safe meme content.">
+<meta property="og:description" content="Because laughter is a full-time job.">
 <meta property="og:image" content="/logo.png">
 <meta property="og:type" content="website">
 
 <link rel="icon" href="logo.png">
+
+<!-- Font (optimized) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
+
+<!-- SEO Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Bekar Memer",
+  "url": "https://bekarmemer.netlify.app",
+  "logo": "https://bekarmemer.netlify.app/logo.png",
+  "sameAs": ["https://www.facebook.com/bekarmemerr"]
+}
+</script>
 </head>
 
 <body>
 
+<!-- HERO -->
 <header class="hero">
-  <div class="hero-inner fade-in">
-    <img src="logo.png" class="logo" alt="Bekar Memer Logo">
+  <div class="hero-box fade-in">
+    <img src="logo.png" alt="Bekar Memer Logo" class="logo">
 
     <h1>Bekar <span>Memer</span></h1>
     <p class="tagline">Because laughter is a full-time job.</p>
 
-    <p class="hero-desc">
+    <p class="desc">
       Clean, relatable, and platform-safe meme content made for pure entertainment.
       No hate. No scams. Just humor.
     </p>
 
-    <a href="#contact" class="btn glow">Submit a Meme</a>
+    <a href="#contact" class="btn">Submit a Meme</a>
   </div>
 </header>
 
+<!-- WHAT WE DO -->
 <section class="section">
   <h2>What We Do</h2>
-
   <div class="cards">
     <div class="card">😂 Original & relatable memes</div>
     <div class="card">📈 Trend-based humor</div>
@@ -47,48 +68,73 @@
   </div>
 </section>
 
+<!-- FACEBOOK CAROUSEL -->
 <section class="section section-dark">
-  <h2>Frequently Asked Questions</h2>
+  <h2>Featured Facebook Posts</h2>
 
-  <div class="faq">
-    <details><summary>Do you steal content?</summary><p>No. We respect originality and creator credits.</p></details>
-    <details><summary>Is the content family-friendly?</summary><p>Yes. Clean and community-safe.</p></details>
-    <details><summary>Do you post political or hateful content?</summary><p>No. Entertainment only.</p></details>
-    <details><summary>Can brands collaborate?</summary><p>Yes. Ethical and platform-approved only.</p></details>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn left" onclick="slideCarousel(-1)">‹</button>
+
+    <div class="carousel-track" id="fbCarousel">
+      <div class="carousel-item">
+        <iframe loading="lazy"
+          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fbekarmemerr%2Fposts%2Fpfbid02rrAC1FVKSS4szsPP6jezdgD5PvVouY5N4BMSbJW319qrEcrbp4DythniXx2gAqNAl&show_text=true&width=500"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          frameborder="0" scrolling="no" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <button class="carousel-btn right" onclick="slideCarousel(1)">›</button>
   </div>
 </section>
 
-<section id="contact" class="section">
+<!-- FAQ -->
+<section class="section">
+  <h2>FAQ</h2>
+  <div class="faq">
+    <details><summary>Do you steal content?</summary><p>No. We respect originality.</p></details>
+    <details><summary>Is content family friendly?</summary><p>Yes. Clean & safe.</p></details>
+    <details><summary>Political posts?</summary><p>No. Entertainment only.</p></details>
+    <details><summary>Brand collaboration?</summary><p>Yes, ethical only.</p></details>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section section-dark">
   <h2>Contact / Meme Submission</h2>
 
-  <form
-    name="contact"
-    method="POST"
-    data-netlify="true"
-    action="/thankyou.html"
-    class="contact-form"
-  >
+  <form name="contact" method="POST" data-netlify="true" action="/thankyou.html">
     <input type="hidden" name="form-name" value="contact">
-
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea name="message" placeholder="Your Message or Meme Link" required></textarea>
-
-    <button type="submit" class="btn glow">Send</button>
+    <button type="submit" class="btn">Send</button>
   </form>
 
-  <!-- Netlify hidden fallback -->
+  <!-- Netlify fallback -->
   <form name="contact" data-netlify="true" hidden></form>
 </section>
 
-<footer class="footer">
+<!-- FOOTER -->
+<footer>
   <p>
     © 2023 Bekar Memer<br>
     Entertainment only • No hate • No scams<br>
-    <a href="privacy.html">Privacy Policy</a> •
-    <a href="terms.html">Terms & Conditions</a>
+    contact.bekarmemer@gmail.com<br>
+    <a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a>
   </p>
 </footer>
+
+<script defer>
+let currentSlide = 0;
+function slideCarousel(dir){
+  const t = document.getElementById("fbCarousel");
+  const c = t.children.length;
+  currentSlide = (currentSlide + dir + c) % c;
+  t.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+</script>
 
 </body>
 </html>
