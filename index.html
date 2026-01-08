@@ -1,110 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Bekar Memer – Clean & Relatable Meme Entertainment</title>
-<meta name="description" content="Bekar Memer delivers clean, relatable, and platform-safe meme content. Entertainment only. No hate. No scams." />
-<meta name="robots" content="index, follow" />
+  <title>Bekar Memer – Clean & Relatable Meme Entertainment</title>
+  <meta name="description" content="Bekar Memer delivers clean, relatable, and platform-safe meme content for entertainment and community fun." />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- SEO / Social -->
+  <meta property="og:title" content="Bekar Memer" />
+  <meta property="og:description" content="Clean, relatable, and platform-safe meme content. No hate. No scams. Just humor." />
+  <meta property="og:image" content="/logo.png" />
+  <meta property="og:type" content="website" />
 
-<link rel="stylesheet" href="style.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Bekar Memer" />
-<meta property="og:description" content="Because laughter is a full-time job." />
-<meta property="og:image" content="/logo.png" />
-<meta property="og:type" content="website" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 
-<!-- Facebook SDK -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous"
-src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
+  <!-- Facebook SDK -->
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0">
+  </script>
 
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Bekar Memer",
+    "url": "https://bekarmemer.netlify.app",
+    "description": "Clean and platform-safe meme entertainment",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bekar Memer"
+    }
+  }
+  </script>
 </head>
 
 <body>
 
+<!-- HERO -->
 <header class="hero">
-  <img src="logo.png" alt="Bekar Memer Logo" class="logo" loading="lazy">
-  <h1>Bekar <span>Memer</span></h1>
-  <p class="tagline">Because laughter is a full-time job.</p>
-  <p class="desc">
-    Clean, relatable, and platform-safe meme content made for pure entertainment.<br>
-    No hate. No scams. Just humor.
-  </p>
-  <a href="#contact" class="btn">Submit a Meme</a>
+  <div class="hero-box">
+    <img src="logo.png" alt="Bekar Memer Logo" class="logo">
+    <h1>Bekar <span>Memer</span></h1>
+    <p class="tagline">Because laughter is a full-time job.</p>
+    <p class="desc">
+      Clean, relatable, and platform-safe meme content made for pure entertainment.
+      No hate. No scams. Just humor.
+    </p>
+    <a href="#contact" class="btn">Submit a Meme</a>
+  </div>
 </header>
 
+<!-- WHAT WE DO -->
 <section>
-<h2>What We Do</h2>
-<div class="grid">
-  <div class="card">😂 Original & relatable memes</div>
-  <div class="card">📈 Trend-based humor</div>
-  <div class="card">🎥 Reels & short-form entertainment</div>
-  <div class="card">🤝 Clean brand collaborations</div>
-  <div class="card">🛡️ Platform-safe content only</div>
-</div>
+  <h2>What We Do</h2>
+  <div class="grid">
+    <div class="card">😂 Original & relatable memes</div>
+    <div class="card">📈 Trend-based humor</div>
+    <div class="card">🎥 Reels & short-form entertainment</div>
+    <div class="card">🤝 Clean brand collaborations</div>
+    <div class="card">🛡️ Platform-safe content only</div>
+  </div>
 </section>
 
+<!-- FEATURED FACEBOOK POSTS -->
 <section>
-<h2>Featured Facebook Posts</h2>
+  <h2>Featured Facebook Posts</h2>
 
-<div class="fb-wrapper">
+  <div class="fb-carousel">
 
-<div class="fb-post"
-data-href="https://www.facebook.com/bekarmemerr/posts/pfbid02rrAC1FVKSS4szsPP6jezdgD5PvVouY5N4BMSbJW319qrEcrbp4DythniXx2gAqNAl"
-data-show-text="true"
-data-width="500"></div>
+    <div class="fb-card">
+      <div class="fb-post"
+        data-href="https://web.facebook.com/bekarmemerr/posts/pfbid02rrAC1FVKSS4szsPP6jezdgD5PvVouY5N4BMSbJW319qrEcrbp4DythniXx2gAqNAl"
+        data-width="500"
+        data-show-text="true"
+        data-lazy="true">
+      </div>
+    </div>
 
-<noscript>
-<a href="https://www.facebook.com/bekarmemerr" target="_blank">View on Facebook</a>
-</noscript>
+    <!-- Add more posts by duplicating this block -->
 
-</div>
+  </div>
 </section>
 
+<!-- FAQ -->
 <section>
-<h2>Frequently Asked Questions</h2>
-<div class="faq">
-<details><summary>Do you steal content?</summary><p>No. We respect originality and creator credits.</p></details>
-<details><summary>Is the content family-friendly?</summary><p>Yes. Clean and community-safe.</p></details>
-<details><summary>Do you post political or hateful content?</summary><p>No. Entertainment only.</p></details>
-<details><summary>Can brands collaborate?</summary><p>Yes, ethical and platform-approved only.</p></details>
-</div>
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
+    <details>
+      <summary>Do you steal content?</summary>
+      <p>No. We respect originality and creator credits.</p>
+    </details>
+    <details>
+      <summary>Is the content family-friendly?</summary>
+      <p>Yes. All content is clean and community-safe.</p>
+    </details>
+    <details>
+      <summary>Do you post political or hateful content?</summary>
+      <p>No. Entertainment only.</p>
+    </details>
+    <details>
+      <summary>Can brands collaborate?</summary>
+      <p>Yes, ethical and platform-approved collaborations only.</p>
+    </details>
+  </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
-<h2>Contact / Meme Submission</h2>
+  <h2>Contact / Meme Submission</h2>
 
-<form name="contact" method="POST" data-netlify="true" action="/thankyou.html">
-<input type="hidden" name="form-name" value="contact">
+  <form name="contact" method="POST" data-netlify="true" action="/thankyou.html">
+    <input type="hidden" name="form-name" value="contact">
 
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" placeholder="Your Message or Meme Link" required></textarea>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message or Meme Link" required></textarea>
 
-<button type="submit" class="btn">Send</button>
-</form>
-
-<form name="contact" data-netlify="true" hidden>
-<input type="text" name="name">
-<input type="email" name="email">
-<textarea name="message"></textarea>
-</form>
+    <button type="submit" class="btn">Send</button>
+  </form>
 </section>
 
+<!-- FOOTER -->
 <footer>
-<p>
-© 2023 Bekar Memer<br>
-Entertainment only • No hate • No scams<br>
-Email: <a href="mailto:contact.bekarmemer@gmail.com">contact.bekarmemer@gmail.com</a><br>
-<a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms & Conditions</a>
-</p>
+  <p>
+    © 2023 Bekar Memer<br>
+    Entertainment only • No hate • No scams<br>
+    Email: <a href="mailto:contact.bekarmemer@gmail.com">contact.bekarmemer@gmail.com</a><br>
+    <a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms & Conditions</a>
+  </p>
 </footer>
 
 </body>
