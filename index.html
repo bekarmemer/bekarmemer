@@ -1,86 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<title>Bekar Memer – Fun, Humor & Positive Vibes</title>
 
-<title>Bekar Memer – Clean & Relatable Meme Entertainment</title>
-<meta name="description" content="Bekar Memer delivers clean, relatable, and platform-safe meme content for entertainment and community fun." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bekar Memer is a fun meme page focused on humor, entertainment, and positive vibes. Enjoy relatable memes and lighthearted content.">
+<meta name="robots" content="index, follow">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- SEO Logo -->
+<link rel="icon" href="logo.png" type="image/png">
+
 <link rel="stylesheet" href="style.css">
 
-<!-- Netlify form detection -->
+<!-- Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EntertainmentBusiness",
+  "name": "Bekar Memer",
+  "description": "A fun meme page focused on humor, entertainment, and positive vibes.",
+  "email": "alwayspositive.ok@gmail.com"
+}
+</script>
 </head>
 
 <body>
 
 <header class="hero">
-  <div class="hero-box">
-    <h1>Bekar <span>Memer</span></h1>
-    <p class="tagline">Because laughter is a full-time job.</p>
-    <p class="desc">
-      Clean, relatable, and platform-safe meme content made for pure entertainment.
-      No hate. No scams. Just humor.
-    </p>
-    <a href="#contact" class="btn">Submit a Meme</a>
-  </div>
+  <img src="logo.png" alt="Bekar Memer Logo" class="logo">
+  <h1>Bekar Memer</h1>
+  <p>Because life is already serious enough 😄</p>
 </header>
 
-<section>
-<h2>What We Do</h2>
-<div class="grid">
-  <div class="card">😂 Original & relatable memes</div>
-  <div class="card">📈 Trend-based humor</div>
-  <div class="card">🎥 Reels & short-form entertainment</div>
-  <div class="card">🤝 Clean brand collaborations</div>
-  <div class="card">🛡️ Platform-safe content only</div>
-</div>
-</section>
+<section class="content">
+  <h2>About Bekar Memer</h2>
+  <p>
+    Bekar Memer is a fun meme page created to spread laughter, humor,
+    and positive vibes. We share relatable and entertaining content
+    purely for enjoyment.
+  </p>
 
-<section>
-<h2>Frequently Asked Questions</h2>
-<div class="faq">
-<details><summary>Do you steal content?</summary><p>No. We respect originality and creator credits.</p></details>
-<details><summary>Is the content family-friendly?</summary><p>Yes. Clean and community-safe.</p></details>
-<details><summary>Do you post political or hateful content?</summary><p>No. Entertainment only.</p></details>
-<details><summary>Can brands collaborate?</summary><p>Yes, ethical and platform-approved collaborations only.</p></details>
-</div>
-</section>
-
-<section id="contact">
-<h2>Contact / Meme Submission</h2>
-
-<form
-  name="contact"
-  method="POST"
-  data-netlify="true"
-  action="/thankyou.html"
->
-  <input type="hidden" name="form-name" value="contact" />
-
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message or Meme Link" required></textarea>
-
-  <button type="submit" class="btn">Send</button>
-</form>
-
-<!-- Netlify fallback form -->
-<form name="contact" data-netlify="true" hidden>
-  <input type="text" name="name">
-  <input type="email" name="email">
-  <textarea name="message"></textarea>
-</form>
-
+  <h2>Contact</h2>
+  <p>Email: <strong>alwayspositive.ok@gmail.com</strong></p>
 </section>
 
 <footer>
-<p>
-© 2023 Bekar Memer<br>
-Entertainment only • No hate • No scams<br>
-<a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms & Conditions</a>
-</p>
+  <p>
+    © 2023 Bekar Memer ·
+    <a href="privacy.html">Privacy Policy</a> ·
+    <a href="terms.html">Terms & Conditions</a>
+  </p>
 </footer>
 
 </body>
